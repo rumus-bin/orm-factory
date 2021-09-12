@@ -46,8 +46,7 @@ class Order
                 $this->viberNotifierDecorator->doBefore(
                     $this->telegramNotifierDecorator->doBefore($this->message)
                 )
-            )
-           ;
+            );
     }
 
 }
