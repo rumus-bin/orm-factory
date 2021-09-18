@@ -40,6 +40,11 @@ class Order
         return $this->loggerNotifier->send($this->message);
     }
 
+    public function sendOnly()
+    {
+        
+    }
+
     public function sendTotalNotifications(): string
     {
         return $this->loggerNotifier->send(
